@@ -1,0 +1,122 @@
+@media screen and (max-width: 1300px) {
+  .services-cards-container-cards-section {
+    justify-content: space-around !important;
+    align-items: center !important;
+
+    gap: 20px !important;
+
+    height: auto !important;
+
+    padding-bottom: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services-cards-container-cards-section {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    margin-bottom: 50px !important;
+  }
+
+  .services-cards-background-heading {
+    width: 100%;
+    height: auto !important;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+}
+
+.services-cards-container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #262535;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.services-cards-background-heading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.services-cards-background-heading > h2 {
+  display: flex;
+  margin-block: 0;
+  font-size: 25vw;
+  color: transparent;
+
+  font-weight: bold;
+
+  -webkit-text-stroke: 5px #4c4b55;
+  text-stroke: 5px #4c4b55;
+
+  text-fill-color: #fff;
+}
+
+.services-cards-top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 90%;
+  height: 90%;
+
+  gap: 20px;
+
+  z-index: 3;
+}
+
+.services-cards-top-content > h3 {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: normal;
+
+  color: #fff;
+
+  font-size: 2em;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.2rem;
+}
+
+.services-cards-container-cards-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+
+  row-gap: 30px;
+
+  width: 100%;
+  height: auto;
+
+  padding-bottom: 100px;
+}

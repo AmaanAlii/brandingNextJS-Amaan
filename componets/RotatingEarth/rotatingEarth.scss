@@ -1,0 +1,202 @@
+// /* COLOURS */
+// /* Replace SCSS variables with their values */
+// $colour-cyan: #ffffff;
+// $colour-white: #ffffff;
+// $colour-black: #ffffff;
+
+// /* RESETS */
+// .rotating-earth-section,
+// *,
+// *:before,
+// *:after {
+//   margin: 0;
+//   padding: 0;
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   -ms-box-sizing: border-box;
+//   box-sizing: border-box;
+//   -webkit-text-size-adjust: 100%;
+//   -webkit-font-smoothing: antialiased;
+// }
+
+// /* Replace SCSS variables with their values */
+// $colourStart: #fff;
+// $colourMid: #fff;
+// $colourEnd: #fff;
+
+// .rotating-earth-section {
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+//   font-family: "Cairo", sans-serif;
+//   font-size: 14px;
+//   line-height: 14px;
+//   font-weight: 400;
+//   text-rendering: optimizeLegibility;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -moz-font-feature-settings: "liga" on;
+//   color: #ffffff;
+//   overflow-x: hidden;
+//   background: #fff; /* Replace SCSS variables with their values */
+//   background: -moz-linear-gradient(
+//     -45deg,
+//     #fff 0%,
+//     #fff 100%
+//   ); /* Replace SCSS variables with their values */
+//   background: -webkit-linear-gradient(
+//     -45deg,
+//     #fff 0%,
+//     #fff 100%
+//   ); /* Replace SCSS variables with their values */
+//   background: linear-gradient(
+//     135deg,
+//     #fff 0%,
+//     #fff 100%
+//   ); /* Replace SCSS variables with their values */
+//   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$colourStart}', endColorstr='${colourEnd}', GradientType=1); /* SCSS variable not replaced correctly */
+// }
+
+// /* Define mixins (animation, transition, transform) */
+
+// .globe {
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// .globe .globe-list {
+//   z-index: 10;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   list-style: none;
+//   display: none;
+//   opacity: 0;
+//   transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// }
+
+// .globe .globe-list.active {
+//   opacity: 1;
+// }
+
+// /* Replace SCSS variables with their values */
+// $dotSize: 16px;
+// $dotSizeLarge: $dotSize + ($dotSize / 2);
+
+// .globe .globe-list > li {
+//   opacity: 0.4;
+//   position: absolute;
+//   margin-left: -($dotSize / 2);
+//   margin-top: -($dotSize / 2);
+//   width: 16px; /* Replace SCSS variable with its value */
+//   height: 16px; /* Replace SCSS variable with its value */
+//   border-radius: 50%;
+//   background: #ffffff; /* Replace SCSS variable with its value */
+//   transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+// }
+
+// .globe .globe-list > li.active {
+//   opacity: 1;
+//   margin-left: -($dotSizeLarge / 2);
+//   margin-top: -($dotSizeLarge / 2);
+//   width: 24px; /* Replace SCSS variable with its value */
+//   height: 24px; /* Replace SCSS variable with its value */
+// }
+
+// .globe .globe-list > li:before {
+//   content: "";
+//   opacity: 0.5;
+//   pointer-events: none;
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   margin-left: -($dotSize / 2);
+//   margin-top: -($dotSize / 2);
+//   width: 16px; /* Replace SCSS variable with its value */
+//   height: 16px; /* Replace SCSS variable with its value */
+//   border-radius: 50%;
+//   background: #ffffff; /* Replace SCSS variable with its value */
+//   animation: 2s pulse infinite linear;
+// }
+
+// /* Define keyframes (pulse) for animations */
+
+// .globe .globe-list > li.active:before {
+//   margin-left: -($dotSizeLarge / 2);
+//   margin-top: -($dotSizeLarge / 2);
+//   width: 24px; /* Replace SCSS variable with its value */
+//   height: 24px; /* Replace SCSS variable with its value */
+// }
+
+// .globe .globe-list > li.active,
+// .globe .globe-list > li.active:before {
+//   background: #ffffff; /* Replace SCSS variable with its value */
+// }
+
+// .globe .globe-list .text {
+//   position: absolute;
+//   opacity: 0.8;
+//   right: 21px; /* Replace SCSS variable with its value */
+//   top: 50%;
+//   display: block;
+//   font-size: 14px;
+//   line-height: 14px;
+//   font-weight: 600;
+//   text-align: right;
+//   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+//     1px 1px 0 #ffffff;
+//   color: #ffffff; /* Replace SCSS variable with its value */
+//   white-space: nowrap;
+//   transform: translateY(-50%);
+// }
+
+// .globe .globe-list > li.active .text {
+//   opacity: 1;
+//   right: 36px; /* Replace SCSS variable with its value */
+//   font-size: 20px;
+//   line-height: 20px;
+//   font-weight: 700;
+// }
+
+// .globe .globe-canvas {
+//   z-index: 1;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+// }
+
+// .globe svg {
+//   height: 100%;
+//   width: 100%;
+//   opacity: 0.3;
+//   animation: rotation 10s linear infinite;
+// }
+
+// .svg-wrapper {
+//   opacity: 0;
+//   display: inline-block;
+//   position: absolute;
+//   width: 80vh;
+//   height: 80%;
+//   left: 0;
+//   right: 0;
+//   top: 10%;
+//   margin: auto;
+//   transform: scale(0.5);
+//   transition: opacity 1s ease-out 1.6s, transform 1s ease-out 1.6s;
+// }
+
+// .svg-wrapper.active {
+//   opacity: 1;
+//   transform: none;
+// }
+
+// @keyframes rotation {
+//   0% {
+//     transform: scaleX(-1) rotate(360deg);
+//   }
+//   100% {
+//     transform: scaleX(-1) rotate(0deg);
+//   }
+// }

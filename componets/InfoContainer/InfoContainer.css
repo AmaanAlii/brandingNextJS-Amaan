@@ -1,0 +1,251 @@
+@media screen and (max-width: 1500px) and (min-width: 769px) and (max-height: 700px) {
+  .info-container-section {
+    height: max-content !important;
+  }
+}
+
+@media screen and (max-height: 950px) and (max-width: 600px) {
+  .info-container-section {
+    flex-direction: column !important;
+    width: 95% !important;
+    height: max-content !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .info-container-image-section {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+
+  .info-globe-top-main {
+    position: absolute;
+    left: 0;
+    top: 60px !important;
+  }
+
+  .info-container-text-section {
+    width: 100% !important;
+    height: 100%;
+
+    padding: 0 !important;
+  }
+
+  .info-container-card {
+    width: 80% !important;
+  }
+
+  .info-container-card-section > img {
+    width: 200px !important;
+
+    display: flex;
+    align-self: flex-end;
+  }
+  .info-container-card-section {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .info-container-card > span > svg {
+    width: 200px !important;
+  }
+
+  .info-container-card-section img {
+    width: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1024px) {
+  .info-container-section {
+    flex-direction: column !important;
+    width: 95% !important;
+    height: max-content !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .info-container-image-section {
+    width: 70% !important;
+    height: 50vh !important;
+  }
+
+  .info-globe-top-main {
+    position: absolute;
+    left: 0;
+    top: 60px !important;
+  }
+
+  .info-container-text-section {
+    width: 100% !important;
+    height: 100%;
+
+    padding: 0 !important;
+  }
+
+  .info-container-card {
+    width: 80% !important;
+  }
+
+  .info-container-card-section > img {
+    width: 200px !important;
+
+    display: flex;
+    align-self: flex-end;
+  }
+  .info-container-card-section {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .info-container-card > span > svg {
+    width: 200px !important;
+  }
+
+  .info-container-card-section img {
+    width: 200px !important;
+  }
+}
+
+.info-container-section {
+  width: 100%;
+  min-height: 120vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-container-image-section {
+  width: 50%;
+  height: 100%;
+
+  position: relative;
+}
+
+.info-container-image-section > img {
+  width: 100%;
+}
+
+.info-globe-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: rotate-anti-clockwise 100s linear infinite;
+}
+
+.info-globe-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: rotate-clockwise 20s linear infinite;
+}
+
+.info-globe-top-main {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-anti-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.info-container-text-section {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  flex-direction: column;
+
+  text-align: left;
+
+  padding: 20px;
+}
+
+.info-container-text-section > p {
+  margin-block: 0;
+}
+
+.info-container-text-section > h4,
+h3 {
+  margin-block: 0;
+}
+
+.info-container-text-section > h1 {
+  font-weight: bold;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.info-container-card-section {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.info-container-card {
+  width: 70%;
+  height: max-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  padding: 30px;
+
+  font-size: 14px;
+
+  gap: 20px;
+
+  background: #f6f6f6;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid var(--selective-yellow-500, #fb0);
+}
+
+.info-container-card > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  gap: 20px;
+}
+
+.info-container-card > span > svg {
+  width: 200px;
+}
+
+.info-container-card-section img {
+  width: 150px;
+
+  cursor: pointer;
+}

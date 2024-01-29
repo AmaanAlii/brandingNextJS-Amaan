@@ -1,0 +1,128 @@
+@media screen and (max-width: 1024px) {
+  .services-faq-section > img {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-faq-section {
+    width: 95% !important;
+
+    padding: 10px 5% !important;
+    background-color: #fff !important;
+  }
+
+  .services-faq-section > img {
+    width: 100% !important;
+  }
+}
+
+.services-faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 90%;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px;
+
+  border-radius: 8px;
+}
+
+.services-faq-section > img {
+  width: 60%;
+}
+
+.services-faq-heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.services-faq-heading-section > img {
+  width: 100%;
+}
+
+.services-faq-heading-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.services-faq-heading-top > h2 {
+  font-weight: bold;
+  font-size: 15vw;
+}
+
+.services-faq-heading-top > img {
+  width: 40%;
+}
+
+.services-faq-qa-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* ... (your existing styles) */
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+
+  justify-content: space-between;
+
+  font-weight: bold;
+
+  text-align: left;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-question .dropdown-icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-question.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.faq-question.active {
+  background-color: #ffbb00;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+
+  text-align: left;
+}
+
+.faq-answer.active {
+  max-height: 1000px;
+}

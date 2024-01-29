@@ -1,0 +1,134 @@
+@media only screen and (max-width: 480px) {
+  .services-info-container {
+    flex-direction: column !important;
+    width: 90% !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .services-info-left,
+  .services-info-right {
+    width: 100% !important;
+
+    min-height: 50vh !important;
+
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .services-info-text-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100% !important;
+    height: auto;
+
+    text-align: justify !important;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1300px) {
+  .services-info-container {
+    flex-direction: column !important;
+    width: 90% !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .services-info-right {
+    width: 100% !important;
+    height: auto !important;
+
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    font-size: 2vw !important;
+  }
+
+  .services-info-left {
+    width: 70% !important;
+    height: 50vh !important;
+
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .services-info-text-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 100% !important;
+    height: auto;
+
+    text-align: justify !important;
+  }
+}
+
+.services-info-container {
+  width: 100%;
+
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.services-info-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.services-info-right {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-direction: column;
+}
+
+.services-info-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  width: 90%;
+  height: auto;
+
+  text-align: left;
+}
+
+.services-info-text-section > h3 {
+  margin-block: 0;
+
+  font-weight: lighter;
+}
+
+.services-info-text-section > p {
+  margin-block: 0;
+}
+
+.services-info-right > img {
+  display: flex;
+  align-self: flex-end;
+}
